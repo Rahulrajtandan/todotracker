@@ -1,0 +1,187 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+/* ================= TOP BAR ================= */
+.top-bar{
+     /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1e1e2f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  z-index: 1000; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: #1e1e2f;
+    color: #fff;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #ccc;
+    z-index: 1000;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+    border-radius: 50%;  /* FULL ROUND */
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.title{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.top-controls{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.top-controls select,
+.top-controls button{
+    padding: 7px 12px;
+    font-size: 15px;
+}
+
+.top-controls button{
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ================= MAIN CONTENT LAYOUT (TABLE + GRAPH) ================= */
+.main-wrapper{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+
+}
+
+/* ================= TABLE ================= */
+.table-container{
+    flex: 3;
+    background: white;
+    border: 1px solid #444;
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    min-width: 700px;
+}
+
+th{
+    background: #fdfdd3;
+    padding: 10px;
+    border: 1px solid #aaa;
+    font-weight: bold;
+}
+
+td{
+    background: #f9f9e6;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* ================= GRAPH BOX ================= */
+.graph-box{
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border: 1px solid #444;
+    min-width: 260px;
+}
+
+.graph-box h3{
+    margin-top: 0;
+    text-align: center;
+}
+
+.graph-area{
+    width: 100%;
+    height: 250px;
+    border: 1px dashed #888;
+    background: #fafafa;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 768px){
+    .title{
+        font-size: 14px;
+    }
+
+    table{
+        min-width: 600px;
+    }
+
+    img{
+        margin-right: 20px;
+    }
+
+    .top-controls{
+        font-size: 14px;
+    }
+
+    .top-controls button{
+        font-size: 12px;
+    }
+
+    #monthSelect{
+        font-size: 12px;
+    }
+
+    #yearSelect{
+        font-size: 12px;
+    }
+
+    .main-wrapper{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        gap: 15px;
+    }
+
+    input[type="checkbox"]{
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media(max-width: 480px){
+    .title{
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+}
