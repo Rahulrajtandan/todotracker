@@ -136,7 +136,7 @@ input[type="checkbox"]{
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width:768px) {
+/* @media (max-width:768px) {
     .main-wrapper {
         flex-direction: column;
     }
@@ -146,6 +146,7 @@ input[type="checkbox"]{
         width: 100%;
     }
  }
+ */
 
 
 
