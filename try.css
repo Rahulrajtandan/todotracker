@@ -82,7 +82,7 @@ img{
 
 /* ================= TABLE ================= */
 .table-container{
-    height: 600px;
+    height: 1000px;
     flex: 3;
     background: white;
     border: 1px solid #444;
@@ -149,6 +149,7 @@ input[type="checkbox"]{
     }
  }
  */
+
 
 
 
